@@ -1,0 +1,281 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+#escritaHeader h3{
+    color: rgb(0, 0, 0);
+    font-size: 100px;
+    font-weight: 800;
+    margin: 5vw;
+}
+
+#escritaHeader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#logo img{
+    width: 12vw;
+}
+
+#logo {
+    transform: rotate(-15deg);
+    
+    /* CÓDIGO PARA CHAMAR A ANIMAÇÃO */
+    -webkit-animation: rodaroda 1s linear alternate 3;
+    -moz-animation: rodaroda 3.0s linear infinite;
+    -ms-animation: rodaroda 3.0s linear infinite;
+    -o-animation: rodaroda 3.0s linear infinite;
+    animation: rodaroda 15.0s linear infinite;
+}
+
+@-webkit-keyframes rodaroda {
+    0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+    50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+    100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@-moz-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@-ms-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@-o-keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+@keyframes rodaroda {
+	0% { -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); -ms-transform:rotate(0deg); -o-transform:rotate(0deg); transform:rotate(0deg); }
+	50% { -webkit-transform:rotate(180deg); -moz-transform:rotate(180deg); -ms-transform:rotate(180deg); -o-transform:rotate(180deg); transform:rotate(180deg); }
+	100% { -webkit-transform:rotate(360deg); -moz-transform:rotate(360deg); -ms-transform:rotate(360deg); -o-transform:rotate(360deg); transform:rotate(360deg); }
+}
+
+::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+    background: #393941;
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(82, 12, 45);
+    border-radius: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: rgb(23, 22, 24);
+}
+
+#headerBosch{
+    display: block;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    text-align: center;
+    color: white;
+    background: url(../img/cores.svg) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    transition: 2s;
+    z-index: -3;
+}
+
+.imagemCentro img{
+    position: fixed;
+    z-index: 99;
+}
+
+header{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.salaDeAula {
+    display: flex;
+    justify-content: end;
+    margin: 30px;
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+}
+
+.salaDeAula button{
+    margin: 0;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+
+.sala{
+    border: 0;
+    margin: 15px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 30px;
+    padding: 12px;
+    width: 13vw;
+}
+
+.botoesSala {
+    display: flex;
+    justify-content: space-around;
+}
+
+#option{
+    color: aqua;
+}
+
+.salaDeAula h5{
+    font-size: 15px;
+    color: rgb(104, 104, 104);
+}
+
+#sala{
+    border-radius: 50px;
+}
+
+#select {
+    border-radius: 30px;
+    border: 0;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    background-color: rgb(224, 224, 224);
+    padding: 12px;
+    width: 10vw;
+    height: 20px;
+}
+
+.student{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 5vw;
+}
+
+.student img{
+    width: 15vw;
+}
+
+.titleStudent h3{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7vh;
+}
+
+.alunosCard{
+    width: 20vw;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 8vh;
+}
+
+#centro img{
+    border-radius: 100px;
+    margin-top: 3vh;
+}
+
+#centro{
+    align-items: center;
+}
+
+.alunosCard a{
+    text-decoration: none;
+    background-color: rgb(214, 214, 214);
+    color: rgb(255, 255, 255);
+}
+
+.btn{
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+#botaoEditar{
+    margin: 10px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 5vw;
+    height: 2vh;
+}
+
+.first:hover{
+    box-shadow: 0 0 40px 40px #9c9c9c inset;
+}
+
+.header:before{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 6px;
+    content: "";
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+header a, h1{
+    color: rgb(51, 51, 51) !important;
+}
+
+footer{
+    margin-top: 10vh;
+    color: rgb(92, 89, 89);
+    bottom: 0;
+    width: 100vw;
+    position: fixed;
+    opacity: 0;
+}
+
+#footerBosch{
+    display: block;
+    width: 100%;
+    height: 1vh;
+    color: white;
+    background: url(../img/cores.svg) no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    bottom: 0;
+}
+
+#fotoCard{
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.alunosCard h5{
+    margin: 2vh;
+}
+
+.titleStudent h3{
+    color: rgb(41, 41, 41);
+}
+
+.capacidade{
+    display: flex;
+    justify-content: center;
+}
